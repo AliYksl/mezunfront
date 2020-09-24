@@ -1,5 +1,5 @@
 {
-  "name": "mezunfront",
+  "name": "mezun-takip",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "axios": "^0.20.0",
-    "karma": "^5.2.2",
+    "firebase": "^7.18.0",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
