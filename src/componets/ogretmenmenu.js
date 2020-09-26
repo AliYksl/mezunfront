@@ -76,12 +76,14 @@ class Ogretmenmenu extends Component {
         
 
         
-        {
-    
-        this.state.users.map(veriler=>(         
-          <KayıtlıBasvuruVeri  veriler={veriler} />
-        ))
-        }
+
+       {this.state.users
+          .filter(user => user.name.includes(this.state.arama))
+          .map(veriler => (
+            <KayıtlıBasvuruVeri  veriler={veriler} />
+          )
+      )}
+     
         
 
       </div>

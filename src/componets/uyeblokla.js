@@ -11,9 +11,23 @@ axios.defaults.headers.common['Authorization'] = token
 
 
 class UyeBlokla extends Component {
-  state ={
-    users:[]
+  constructor(props){
+    super(props);
+     this.state ={
+       arama:'',
+       users:[]
+   
+     }
+     this.onChange = this.onChange.bind(this);
+     
   }
+ 
+   onChange(event){
+     this.setState({
+       [event.target.name]: event.target.value
+     })
+     
+   }
 
   async componentDidMount(){
     
@@ -33,7 +47,10 @@ class UyeBlokla extends Component {
 
             <div className='right menu'>
                 <div className="ui icon input">
-                    <input type="text " placeholder="Öğrenci Ara..." />
+                    <input type="text " placeholder="Öğrenci Ara..."
+                       name='arama' 
+                       value={this.state.arama}
+                       onChange={this.onChange} />
                     <i className="search link icon"></i>
                   </div>
                 <a href="/" className="ui item" className="ui item"  onClick={()=>{
@@ -56,12 +73,14 @@ class UyeBlokla extends Component {
           </div>
         </div>
 
-           {
-            this.state.users.map(veriler=>(   
-            
-            <KayıtlıVeriBlokla veriler={veriler}/>
-          ))
-        }
+
+        {this.state.users
+              .filter(user => user.name.includes(this.state.arama))
+              .map(veriler => (
+                <KayıtlıVeriBlokla  veriler={veriler} />
+              )
+          )}
+    
         
 
       </div>

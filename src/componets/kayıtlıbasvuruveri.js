@@ -2,8 +2,9 @@ import React from 'react';
 import logo from './profil.jpg';
 
 const KayıtlıBasvuruVeri =({veriler}) =>{
+ 
   
-  const Arama =veriler.name;
+  
   
  
   return veriler.blocked === false ?(
