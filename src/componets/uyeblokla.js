@@ -44,6 +44,7 @@ class UyeBlokla extends Component {
             <a  href="Ogrenciler" className="item"> Mezun Öğrenciler  </a>
             <a href="UyeBlokla"  className="active item"> Mezun Öğrenci Blokla  </a>
             <a href="UyeSil"  className="item"> Mezun Öğrenci Sil  </a>
+            <a href="OzelArama"  className="item"> Özel Arama  </a>
 
             <div className='right menu'>
                 <div className="ui icon input">
