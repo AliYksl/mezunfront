@@ -8,7 +8,15 @@ import Ogretmenmenu from './componets/ogretmenmenu';
 import UyeSil from './componets/uyesil';
 import UyeBlokla from './componets/uyeblokla';
 import OgrenciBilgilerim from './componets/ogrencimenu/ogrencibilgilerim';
-import history from './history'
+import OzelArama from './componets/ozelarama';
+import OkulNoFiltre from './componets/oa/okulNoFiltre';
+import AkedemikBirimFiltre from './componets/oa/akedemikBirimFiltre';
+import EgitimBaslangıcFiltre from './componets/oa/egitimBaslangıcFiltre';
+import EgitimBitisFiltre from './componets/oa/egitimBitisFiltre';
+import EmailFiltre from './componets/oa/emailFiltre';
+import SektörFiltre from './componets/oa/sektörFiltre';
+import PozisyonFiltre from './componets/oa/pozisyonFiltre';
+import history from './history';
 import './App.css';
 
 
@@ -29,6 +37,15 @@ class App extends Component{
             <Route path='/ogretmengiris/Ogrenciler' exact component={Ogretmenmenu}/>
             <Route path='/ogretmengiris/UyeSil' exact component={UyeSil}/>
             <Route path='/ogretmengiris/UyeBlokla' exact component={UyeBlokla}/>
+            <Route path='/ogretmengiris/OzelArama' exact component={OzelArama}/>
+            <Route path='/ogretmengiris/OkulNoFiltre' exact component={OkulNoFiltre}/>
+            <Route path='/ogretmengiris/AkedemikBirimFiltre' exact component={AkedemikBirimFiltre}/>
+            <Route path='/ogretmengiris/EgitimBaslangıcFiltre' exact component={EgitimBaslangıcFiltre}/>
+            <Route path='/ogretmengiris/EgitimBitisFiltre' exact component={EgitimBitisFiltre}/>
+            <Route path='/ogretmengiris/EmailFiltre' exact component={EmailFiltre}/>
+            <Route path='/ogretmengiris/SektörFiltre' exact component={SektörFiltre}/>
+            <Route path='/ogretmengiris/PozisyonFiltre' exact component={PozisyonFiltre}/>
+            
 
         </Switch>
       </div>

@@ -136,23 +136,7 @@ const KayıtlıVeriBlokla =({veriler}) =>{
               </div>
             </div>
             <div className="extra content">
-              <div className="ui two buttons">
-                <div className="ui basic orange button"  
-                  onClick={()=>{
-                      
-                    axios.get(API_URL + "/api/admin/block/"+veriler._id,{
-                      headers: {
-                          'Authorization': `Bearer: ${localStorage.getItem('token')}`
-                      }
-                  })
-                    .then((veriler)=>{
-                      history.push('/ogretmengiris/UyeBlokla')
-                    })
-                    .catch((err)=>{
-                      console.log(err);
-                    })
-                 }}>Blokla</div>
-              </div>
+           
             </div>
           </div>
          

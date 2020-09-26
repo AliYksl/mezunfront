@@ -45,6 +45,7 @@ class Ogretmenmenu extends Component {
             <a  href="Ogrenciler" className="active item"> Mezun Öğrenciler  </a>
             <a href="UyeBlokla"  className="item"> Mezun Öğrenci Blokla  </a>
             <a href="UyeSil"  className="item"> Mezun Öğrenci Sil  </a>
+            <a href="OzelArama"  className="item"> Özel Arama  </a>
             <div className='right menu'>
                   <div className="ui icon input">
                 <input type="text " placeholder="Öğrenci Ara..." 
